@@ -1,5 +1,8 @@
 package ud5ejercicios;
 
+
+import java.util.Scanner;
+
 /*
  * Proyecto Ud5_ProgramacionModular - Archivo Ej5.java - Compañía DAW
  * License Creative Commons BY-NC-SA 4.0
@@ -14,9 +17,28 @@ package ud5ejercicios;
  */
 public class Ej5 {
     
-    public static double millas_a_kilometros(int millas){
+    public static double millas_a_kilometros(double millas){
         
+         return 1.60934 * millas;
         
     }
 
+    
+    public static void main(String[] args) {
+        
+        // Variables
+        double millas, km;
+        
+        // Scanner
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Introduce las millas: ");
+        millas = sc.nextDouble();
+        
+        km = millas_a_kilometros(millas);
+        System.out.println("kilómetros: "+km);
+        
+        
+    }
+    
 }
