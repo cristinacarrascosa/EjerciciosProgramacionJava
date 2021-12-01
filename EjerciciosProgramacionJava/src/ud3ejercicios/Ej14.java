@@ -17,7 +17,7 @@ public class Ej14 {
              a = sc.nextInt();
         
                                    
-                    if ((a % 10) = =0) {
+                    if ((a % 10) == 0) {
                          mult = true;            
                     }    
             }
