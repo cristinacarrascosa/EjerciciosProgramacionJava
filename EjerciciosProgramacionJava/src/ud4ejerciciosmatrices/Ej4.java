@@ -1,40 +1,62 @@
 /*
- * Proyecto Unidad4 - Archivo Ej4.java - Compañía DAW
- * License Creative Commons BY-NC-SA 4.0
- * https://creativecommons.org/licenses/by-nc-sa/4.0/
+ *Necesitamos crear un programa para almacenar las notas de 4 alumnos (llamados
+“Alumno 1”, “Alumno 2”, etc.) y 5 asignaturas. El usuario introducirá las notas por
+teclado y luego el programa mostrará la nota mínima, máxima y media de cada
+alumno.
  */
-
 package ud4ejerciciosmatrices;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Cristina Carrascosa Torres <cctausias@gmail.com>
- * @version 1.0
- * @date 4 nov. 2021 18:43:16
+ * @author carra
  */
 public class Ej4 {
-
-    /**Crea   un   programa   que   pida   por  teclado   tres  cadenas  de   texto:  nombre   y  dos
-apellidos. Luego mostrará un código de usuario (en mayúsculas) formado por la
-concatenación de las tres primeras letras de cada uno de ellos. Por ejemplo si se
-introduce “Lionel”, “Tarazón” y “Alcocer” mostrará “LIOTARALC”
-     */
     public static void main(String[] args) {
+        // Variables
+        int alumnos = 4;
+        int asignaturas = 5;
+        int [][] notas = new int [alumnos][asignaturas];
+        
+        // Creo Scanner
+        Scanner sc = new Scanner(System.in);
+        
+        // Pido notas
+        for (int i = 0; i < alumnos; i++) {
+            System.out.println("Dime notas alumno "+(i+1));
+            for (int j = 0; j < asignaturas; j++) {
+                notas [i][j]= sc.nextInt();
+            }
             
-            Scanner sc = new Scanner(System.in);
-            
-            System.out.println("Introduce nombre y apellidos");
-            
-            String nom= sc.nextLine();
-            String ap1= sc.nextLine();
-            String ap2= sc.nextLine();
-            
-            
-            
-            
-            System.out.println((nom.substring(0,3)+ap1.substring(0,3)+ap2.substring(0,3)).toUpperCase());
+        }
+        // Mostramos las notas
+        for (int i = 0; i < notas.length; i++) {
+            System.out.print("Alumno "+(i+1)+": ");
+            for (int j = 0; j < notas[0].length; j++) {
+                System.out.print(notas[i][j]+" ");
+            }
+            System.out.println("");
+        }
+        // Para cada alumno calculamos nota mínima, máxima y media
+        for (int i = 0; i < alumnos; i++) {
+            // Declaramos variables
+            int total = 0;
+            int min = notas[i][0];
+            int max = notas[i][0];
+            // Recorremos las notas del alumno
+            for (int j = 0; j < asignaturas; j++) {
+                total += notas[i][j];
+                min = Math.min(min,notas[i][j]);
+                max = Math.max(max,notas[i][j]);
+            }
+            // Mostramos estadísticas de cada alumno
+            System.out.println("ALUMNO "+(i+1));
+            System.out.println("Media: "+(double)total/asignaturas);
+            System.out.println("Máxima: "+max);
+            System.out.println("Mínima: "+min);
+            System.out.println("");
+        }
     }
-
+    
 }

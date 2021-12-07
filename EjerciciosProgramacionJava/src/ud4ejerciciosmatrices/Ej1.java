@@ -1,37 +1,35 @@
 /*
- * Proyecto Unidad4 - Archivo Ej1.java - Compañía DAW
- * License Creative Commons BY-NC-SA 4.0
- * https://creativecommons.org/licenses/by-nc-sa/4.0/
+ * Crea un programa que cree una matriz de tamaño 5x5 que almacene los números del
+ *1 al 25 y luego muestre la matriz por pantalla.
  */
-
 package ud4ejerciciosmatrices;
-
-import java.util.Scanner;
 
 /**
  *
- * @author Cristina Carrascosa Torres <cctausias@gmail.com>
- * @version 1.0
- * @date 3 nov. 2021 21:26:01
+ * @author carra
  */
 public class Ej1 {
-
-    /**Crea un programa que pida una cadena de texto y luego la muestre tanto en
-      *mayúsculas como en minúsculas.
-     */
     public static void main(String[] args) {
+        // Variables
+        int [][] matriz = new int [5][5];
+        int contador = 1;
         
- 
-        
-        Scanner sc= new Scanner(System.in);
+        // Llenamos la matriz con for anidados
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                matriz [i][j] = contador;
+                contador ++;
+            }
             
-            System.out.println("Introduce un texto");
-            String s = sc.nextLine();
-            
-            System.out.println(s.toUpperCase());
-            System.out.println(s.toLowerCase());
-            
-        
+        }
+        // Motramos la matriz
+        for (int i = 0; i < matriz.length; i++) {
+            System.out.print("Fila "+i+": ");
+            for (int j = 0; j < matriz[0].length; j++) {
+                System.out.print(matriz[i][j]+" ");
+            }
+            System.out.println("");
+        }
     }
-
+    
 }

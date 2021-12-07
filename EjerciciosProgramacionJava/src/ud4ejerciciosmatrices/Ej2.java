@@ -1,42 +1,35 @@
 /*
- * Proyecto Unidad4 - Archivo Ej2.java - Compañía DAW
- * License Creative Commons BY-NC-SA 4.0
- * https://creativecommons.org/licenses/by-nc-sa/4.0/
+ * Crea un programa que cree una matriz de 10x10 e introduzca los valores de las tablas
+ *   de multiplicar del 1 al 10 (cada tabla en una fila). Luego mostrará la matriz por
+ *  pantalla
  */
-
 package ud4ejerciciosmatrices;
-
-import java.util.Scanner;
 
 /**
  *
- * @author Cristina Carrascosa Torres <cctausias@gmail.com>
- * @version 1.0
- * @date 3 nov. 2021 21:41:15
+ * @author carra
  */
 public class Ej2 {
-
-    /**Crea un programa que pida dos cadenas de texto por teclado y luego indique si son
-iguales o no, además de si son iguales sin diferenciar entre mayúsculas y minúsculas
-     */
     public static void main(String[] args) {
+        // Variables
+        int [][] matriz = new int [10][10];
+        int cont;
         
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("Introduce  2 cadenas de texto");
-        String t1=sc.nextLine();
-        String t2=sc.nextLine();
-        
-        if (t1.equals(t2)) {
-            System.out.println("Son iguales");
-        } else if (t1.equalsIgnoreCase(t2)) {
-            System.out.println("Son iguales ignorando las mayúnsculas y minúsculas");
-        } else
-            System.out.println("No son iguales");
-        
-        
-        
-        
+        // Llenamos la matriz con for anidados
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                matriz [i][j]= (i+1) * (j+1);
+            }
+        }
+        // Motramos la matriz
+        for (int i = 0; i < matriz.length; i++) {
+            System.out.print("Tabla del "+(i+1)+": ");
+            for (int j = 0; j < matriz[0].length; j++) {
+                System.out.print(matriz[i][j]+" ");
+            }
+            System.out.println("");
+        }
     }
-
+    
+    
 }

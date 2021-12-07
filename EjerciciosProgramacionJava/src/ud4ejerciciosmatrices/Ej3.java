@@ -1,42 +1,49 @@
 /*
- * Proyecto Unidad4 - Archivo Ej3.java - Compañía DAW
- * License Creative Commons BY-NC-SA 4.0
- * https://creativecommons.org/licenses/by-nc-sa/4.0/
+ * Crea un programa que cree una matriz de tamaño NxM (tamaño introducido por
+teclado) e introduzca en ella NxM valores (también introducidos por teclado). Luego
+deberá recorrer la matriz y al final mostrar por pantalla cuántos valores son mayores
+que cero, cuántos son menores que cero y cuántos son igual a cero.
  */
-
 package ud4ejerciciosmatrices;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Cristina Carrascosa Torres <cctausias@gmail.com>
- * @version 1.0
- * @date 4 nov. 2021 18:31:36
+ * @author carra
  */
 public class Ej3 {
-
-    /**Crea un programa que pida dos cadenas de texto y luego 
-     * las muestre en orden
-        alfabético (sin diferenciar entre mayúsculas y minúsculas).
-     */
     public static void main(String[] args) {
+        // Variables
+        int [][] numeros;
+        int cuantosMayores= 0, cuantosMenos = 0, cuantosIguales = 0;
+        int n, m;
         
-        Scanner sc= new Scanner(System.in);
+        // Creamos Scanner
+        Scanner sc = new Scanner(System.in);
         
-        System.out.println("Introduce dos cadenas de texto");
-        String t1=sc.nextLine();
-        String t2=sc.nextLine();
+        // Pedimos valores
+        System.out.print("Introduce N: ");
+        n = sc.nextInt();
+        System.out.print("Introduce M: ");
+        m = sc.nextInt();
+        // Creamos matriz con los valores introducidos
+        numeros = new int [n][m];
         
-        if (t1.compareToIgnoreCase(t2) == 1) {
-            System.out.println("1º: "+t1+"\n2º:  "+t2);
-        } else if (t1.compareToIgnoreCase(t2)== 0) {
-            System.out.println("Son iguales");
-        } else
-            System.out.println("1º: "+t2+"\n2º: "+t1);
-        
-        
-        
+        // Pedimos valores para rellenar
+        for (int i = 0; i < numeros.length; i++) {
+            for (int j = 0; j < numeros[0].length; j++) {
+                System.out.println("Dime valor ["+i+"]["+j+"]");
+                numeros[i][j]=sc.nextInt();
+            }
+        }
+        // Mostramos matriz
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print("Fila "+i+": ");
+            for (int j = 0; j < numeros[0].length; j++) {
+                System.out.print(numeros[i][j]+" ");
+            }
+            System.out.println("");
+        }
     }
-
 }
