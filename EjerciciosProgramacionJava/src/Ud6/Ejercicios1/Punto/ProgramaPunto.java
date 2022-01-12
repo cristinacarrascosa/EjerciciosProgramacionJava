@@ -18,18 +18,15 @@ public class ProgramaPunto {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        punto p1 = new punto();
+        Punto p1 = new Punto(5, 0);
 
-        p1.x = 5;
-        p1.y = 0;
+        
 
-        punto p2 = new punto();
-        p2.x = 10;
-        p2.y = 10;
+        Punto p2 = new Punto(10, 10);
+        
 
-        punto p3 = new punto();
-        p3.x = -3;
-        p3.y = 7;
+        Punto p3 = new Punto(-3, 7);
+        
 
         System.out.println("P1 X:" + p1.x+", "+"Y:"+p1.y);
         System.out.println("P2 X:" + p2.x+", "+"Y:"+p2.y);

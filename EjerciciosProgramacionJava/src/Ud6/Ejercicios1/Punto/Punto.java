@@ -12,8 +12,15 @@ package Ud6.Ejercicios1.Punto;
  * @version 1.0
  * @date 10 ene. 2022 20:01:57
  */
-public class punto {
+public class Punto {
     
      public int x;
      public int y;
+     
+     public Punto(int x, int y){
+         
+         this.x = x;
+         
+         this.y = y;
+     }
 }

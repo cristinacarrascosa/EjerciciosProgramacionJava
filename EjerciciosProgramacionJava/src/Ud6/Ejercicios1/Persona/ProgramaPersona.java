@@ -22,28 +22,19 @@ public class ProgramaPersona {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        persona persona1 = new persona();
-        System.out.println("Introduce DNI");
-        persona1.dni= sc.nextLine();
-        System.out.println("Introduce nombre");
-        persona1.nombre = sc.nextLine();
-        System.out.println("Introduce apellidos");
-        persona1.apellidos = sc.nextLine();
-        System.out.println("Introduce edad");
-        persona1.edad= sc.nextInt();
+        Persona persona1 = new Persona("cristina", "carrascosa", 21);
+       
         
-        sc.nextLine();
-        persona persona2 = new persona();
-        System.out.println("Introduce DNI");
-        persona2.dni= sc.nextLine();
-        System.out.println("Introduce nombre");
-        persona2.nombre = sc.nextLine();
-        System.out.println("Introduce apellidos");
-        persona2.apellidos = sc.nextLine();
-        System.out.println("Introduce edad");
-        persona2.edad= sc.nextInt();
-        System.out.println(persona1.nombre+" "+persona1.apellidos+" "+persona1.dni+" "+persona1.edad);
-        System.out.println(persona2.nombre+" "+persona2.apellidos+" "+persona2.dni+" "+persona2.edad);
+        
+        
+        Persona persona2 = new Persona("clara", "carrascosa", 45);
+        
+        
+        
+        
+        
+        System.out.println(persona1.nombre+" "+persona1.apellidos+" "+ persona1.edad);
+        System.out.println(persona2.nombre+" "+persona2.apellidos+" "+persona2.edad);
     }
 
 }

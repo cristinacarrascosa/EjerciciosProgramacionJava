@@ -19,4 +19,6 @@ public class Rectangulo {
     public int x2;
     public int y2;
     
+   
+    
 }
