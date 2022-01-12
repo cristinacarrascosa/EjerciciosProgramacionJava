@@ -21,10 +21,6 @@ public class Articulo {
     public Articulo(String nom, double p, int iva, int cuantosQ) {
 
         this.nombre = nom;
-        this.precio = p;
-        this.iva = iva;
-        this.cuantosQuedan = cuantosQ;
-
         if (p <= 0) {
             System.err.println("Precio no válido");
         } else {

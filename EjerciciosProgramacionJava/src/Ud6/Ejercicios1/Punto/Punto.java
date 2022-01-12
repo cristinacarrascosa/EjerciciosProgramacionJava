@@ -14,13 +14,17 @@ package Ud6.Ejercicios1.Punto;
  */
 public class Punto {
     
-     public int x;
-     public int y;
+     private int x;
+     private int y;
      
      public Punto(int x, int y){
          
          this.x = x;
-         
          this.y = y;
      }
+     public int getX(){
+         return x;
+     }
+     
+     
 }
