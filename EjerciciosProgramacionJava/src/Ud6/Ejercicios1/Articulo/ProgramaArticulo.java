@@ -19,12 +19,9 @@ public class ProgramaArticulo {
      */
     public static void main(String[] args) {
         
-        Articulo a1 = new Articulo();
+        Articulo a1 = new Articulo("pijama", 15, 21, 10);
         
-        a1.precio = 15;
-        a1.nombre = "pijama";
-        a1.cuantosQuedan = 10;
-        
+                
         System.out.println(a1.nombre+": "+a1.precio+" euros");
         System.out.println("IVA: "+a1.iva+" - PVP: "+(a1.precio+(a1.precio*a1.iva/100)));
     }
