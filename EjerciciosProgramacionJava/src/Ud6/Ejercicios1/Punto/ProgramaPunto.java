@@ -27,10 +27,20 @@ public class ProgramaPunto {
 
         Punto p3 = new Punto(-3, 7);
         
+        // Utilizamos los métodos
+        p1.imprime();
+        p1.setXY(5, 2);
+        p1.imprime();
+        p1.desplaza(3, 6);
+        p1.imprime();
+        
+        System.out.println("distancia del punto p3 "+p1.distancia(p3));
 
-        System.out.println("P1 X:" + p1.getX()+", "+"Y:"+p1.getY());
+       /* System.out.println("P1 X:" + p1.getX()+", "+"Y:"+p1.getY());
         System.out.println("P2 X:" + p2.getX()+", "+"Y:"+p2.getY());
-        System.out.println("P3 X:" + p3.getX()+", "+"Y:"+p3.getY());
+        System.out.println("P3 X:" + p3.getX()+", "+"Y:"+p3.getY());*/
     }
+    
+    
 
 }

@@ -18,7 +18,7 @@ public class ProgramaArticulo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        // MIRAR POR QUE NO COJE EL IVA
         Articulo a1 = new Articulo("pijama", 15, 21, 10);
         
                 
