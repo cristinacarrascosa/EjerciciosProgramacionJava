@@ -57,5 +57,26 @@ public class Persona {
     public void setEd(int e){
         this.edad = e;
     }
+    
+    // Métodos
+    
+    public void imprime() {
+        
+        System.out.println("DNI: "+dni+" "+nombre+" "+apellidos+" "+edad);
+    }
+    public boolean esMayorEdad(){
+        
+        
+        if (edad < 18){
+            return false;
+        }else
+            return true;
+    }
+    public boolean esJubilado(){
+        if (edad >= 65){
+            return true;
+        }else
+            return false;
+    }
 
 }
