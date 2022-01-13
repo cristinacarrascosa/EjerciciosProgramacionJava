@@ -24,13 +24,13 @@ public class ProgramaRectangulo {
         
         Rectangulo r2 = new Rectangulo(7, 9, 2, 3);
        
-        System.out.println("R1: "+r1.x1+", "+r1.y1+"  "+r1.x2+", "+r1.y2);
-        System.out.println("Perímetro R1: "+(Math.abs(r1.x2-r1.x1)+Math.abs(r1.y2-r1.y1))*2);
-        System.out.println("Área R1: "+Math.abs(r1.x2-r1.x1)*Math.abs(r1.y2-r1.y1));
+        System.out.println("R1: "+r1.getX1()+", "+r1.getY1()+"  "+r1.getX2()+", "+r1.getY2());
+        System.out.println("Perímetro R1: "+(Math.abs(r1.getX2()-r1.getX1())+Math.abs(r1.getY2()-r1.getY1()))*2);
+        System.out.println("Área R1: "+Math.abs(r1.getX2()-r1.getX1())*Math.abs(r1.getY2()-r1.getY1()));
         System.out.println("");
-        System.out.println("R1: "+r2.x1+", "+r2.y1+"  "+r2.x2+", "+r2.y2);
-        System.out.println("Perímetro 2: "+(Math.abs(r2.x2-r2.x1)+Math.abs(r2.y2-r2.y1))*2);
-        System.out.println("Área R2: "+Math.abs(r2.x2-r2.x1)*Math.abs(r2.y2-r2.y1));
+        System.out.println("R2: "+r2.getX1()+", "+r2.getY1()+"  "+r2.getX2()+", "+r2.getY2());
+        System.out.println("Perímetro R2: "+(Math.abs(r2.getX2()-r2.getX1())+Math.abs(r2.getY2()-r2.getY1()))*2);
+        System.out.println("Área R2: "+Math.abs(r2.getX2()-r2.getX1())*Math.abs(r2.getY2()-r2.getY1()));
     }
 
 }

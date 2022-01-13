@@ -22,8 +22,8 @@ public class ProgramaArticulo {
         Articulo a1 = new Articulo("pijama", 15, 21, 10);
         
                 
-        System.out.println(a1.nombre+": "+a1.precio+" euros");
-        System.out.println("IVA: "+a1.iva+" - PVP: "+(a1.precio+(a1.precio*a1.iva/100)));
+        System.out.println(a1.n()+": "+a1.p()+" euros");
+        System.out.println("IVA: "+a1.iva()+" - PVP: "+(a1.p()+(a1.p()*a1.iva()/100)));
     }
 
 }

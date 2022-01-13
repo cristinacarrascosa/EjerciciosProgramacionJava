@@ -15,19 +15,47 @@ package Ud6.Ejercicios1.Persona;
 public class Persona {
     
     
-    public String dni;
-    public String nombre;
-    public String apellidos;
-    public int edad;
+    private String dni;
+    private String nombre;
+    private String apellidos;
+    private int edad;
     
-    public Persona(String nom, String ap, int e){
-        
+    
+    //Constructor
+    public Persona(String id, String nom, String ap, int e){
+        dni = id;
         nombre = nom;
         apellidos = ap;
         edad = e;
-        
-        
+          
     }
     
+    // Getters 
+    public String getDni(){
+        return dni;
+    }
+    public String getNom(){
+        return nombre;
+    }
+    public String getAp(){
+        return apellidos;
+    }
+    public int getEd(){
+        return edad;
+    }
+    
+    //Setters
+    public void setId(String id){
+        this.dni = id;
+    }
+    public void setNom(String n){
+        this.nombre = n;
+    }
+    public void setAp(String a){
+        this.apellidos = a;
+    }
+    public void setEd(int e){
+        this.edad = e;
+    }
 
 }

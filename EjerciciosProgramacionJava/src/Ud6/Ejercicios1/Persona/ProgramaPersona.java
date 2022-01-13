@@ -3,7 +3,6 @@
  * License Creative Commons BY-NC-SA 4.0
  * https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
-
 package Ud6.Ejercicios1.Persona;
 
 import java.util.Scanner;
@@ -21,20 +20,17 @@ public class ProgramaPersona {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        Persona persona1 = new Persona("20834113U","cristina", "carrascosa", 21);
+
+        Persona persona2 = new Persona("123456789D","clara", "carrascosa", 45);
         
-        Persona persona1 = new Persona("cristina", "carrascosa", 21);
-       
+        Persona p3 = new Persona("132456987D","Pepa","Gimeno", 25);
+
+        System.out.println(persona1.getDni()+" "+ persona1.getNom() + " " + persona1.getAp() + " " + persona1.getEd());
+        System.out.println(persona2.getDni()+" "+ persona2.getNom() + " " + persona2.getAp() + " " + persona2.getEd());
+        System.out.println(p3.getDni()+" "+ p3.getNom() + " " + p3.getAp() + " " + p3.getEd());
         
-        
-        
-        Persona persona2 = new Persona("clara", "carrascosa", 45);
-        
-        
-        
-        
-        
-        System.out.println(persona1.nombre+" "+persona1.apellidos+" "+ persona1.edad);
-        System.out.println(persona2.nombre+" "+persona2.apellidos+" "+persona2.edad);
     }
 
 }

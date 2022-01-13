@@ -13,11 +13,13 @@ package Ud6.Ejercicios1.Articulo;
  */
 public class Articulo {
 
-    public String nombre;
-    public double precio;
-    public int iva;
-    public int cuantosQuedan;
-
+    private String nombre;
+    private double precio;
+    private int iva;
+    private int cuantosQuedan;
+    
+    
+    // Constructor
     public Articulo(String nom, double p, int iva, int cuantosQ) {
 
         this.nombre = nom;
@@ -38,6 +40,34 @@ public class Articulo {
         } else {
             cuantosQuedan = cuantosQ;
         }
+    }
+    
+    // Getters
+    public String n(){
+        return nombre;
+    }
+    public double p(){
+        return precio;
+    }
+    public int iva(){
+        return iva;
+    }
+    public int cQ(){
+        return cuantosQuedan;
+    }
+    
+    // Setters
+    public void n(String n){
+        this.nombre = n;
+    }
+    public void p(double p){
+        this.precio = p;
+    }
+    public void iva(int iva){
+        this.iva = iva;
+    }
+    public void cQ(int cQ){
+        this.cuantosQuedan = cQ;
     }
 
 }

@@ -29,8 +29,8 @@ public class ProgramaPunto {
         
 
         System.out.println("P1 X:" + p1.getX()+", "+"Y:"+p1.getY());
-        System.out.println("P2 X:" + p2.x+", "+"Y:"+p2.y);
-        System.out.println("P3 X:" + p3.x+", "+"Y:"+p3.y);
+        System.out.println("P2 X:" + p2.getX()+", "+"Y:"+p2.getY());
+        System.out.println("P3 X:" + p3.getX()+", "+"Y:"+p3.getY());
     }
 
 }
