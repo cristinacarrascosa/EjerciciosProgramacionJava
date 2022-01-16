@@ -21,16 +21,20 @@ public class ProgramaPersona {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        Persona persona1 = new Persona("20834113U","cristina", "carrascosa", 21);
+        Persona p1 = new Persona("20834113U","cristina", "carrascosa", 15);
 
-        Persona persona2 = new Persona("123456789D","clara", "carrascosa", 45);
+        Persona p2 = new Persona("123456789D","clara", "carrascosa", 45);
         
         Persona p3 = new Persona("132456987D","Pepa","Gimeno", 25);
 
-        System.out.println(persona1.getDni()+" "+ persona1.getNom() + " " + persona1.getAp() + " " + persona1.getEd());
-        System.out.println(persona2.getDni()+" "+ persona2.getNom() + " " + persona2.getAp() + " " + persona2.getEd());
+        System.out.println(p1.getDni()+" "+ p1.getNom() + " " + p1.getAp() + " " + p1.getEd());
+        System.out.println(p2.getDni()+" "+ p2.getNom() + " " + p2.getAp() + " " + p2.getEd());
         System.out.println(p3.getDni()+" "+ p3.getNom() + " " + p3.getAp() + " " + p3.getEd());
         
+        
+        System.out.println("Es mayor de edad: "+p1.esMayorEdad(p1.getEd()));
+        System.out.println("Es jubilado: "+p1.esJubilado(p1.getEd()));
+        System.out.println("La diferencia de edad es: "+p1.diferenciaEdad(p2));
     }
 
 }

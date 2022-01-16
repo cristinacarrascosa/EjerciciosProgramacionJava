@@ -31,6 +31,9 @@ public class ProgramaRectangulo {
         System.out.println("R2: "+r2.getX1()+", "+r2.getY1()+"  "+r2.getX2()+", "+r2.getY2());
         System.out.println("Perímetro R2: "+(Math.abs(r2.getX2()-r2.getX1())+Math.abs(r2.getY2()-r2.getY1()))*2);
         System.out.println("Área R2: "+Math.abs(r2.getX2()-r2.getX1())*Math.abs(r2.getY2()-r2.getY1()));
+        System.out.println("---------------------------");
+        
+        r1.imprimir();
     }
 
 }

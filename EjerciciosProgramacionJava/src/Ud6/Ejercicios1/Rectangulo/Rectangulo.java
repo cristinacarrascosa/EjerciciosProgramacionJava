@@ -69,5 +69,11 @@ public class Rectangulo {
     public void setY2(int y2){
         this.y2 = y2;
     }
+    
+    //Métodos
+    public void imprimir(){
+        System.out.println("Rectángulo: ("+getX1()+","+getY1()+")("+getX2()+","+getY2()+")");
+    }
+    
 
 }

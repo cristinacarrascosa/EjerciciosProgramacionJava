@@ -64,19 +64,23 @@ public class Persona {
         
         System.out.println("DNI: "+dni+" "+nombre+" "+apellidos+" "+edad);
     }
-    public boolean esMayorEdad(){
+    public boolean esMayorEdad(int getEd){
         
         
-        if (edad < 18){
+        if (getEd < 18){
             return false;
         }else
             return true;
     }
-    public boolean esJubilado(){
-        if (edad >= 65){
+    public boolean esJubilado(int getEd){
+        if (getEd >= 65){
             return true;
         }else
             return false;
+    }
+    public int diferenciaEdad(Persona p){
+        int diferencia = p.edad - this.edad;
+        return diferencia;
     }
 
 }
