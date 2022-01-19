@@ -8,7 +8,7 @@ public class ProgramaDNI {
         
         DNI miDni = new DNI();
         
-        miDni.setDni(41460068);
+        miDni.setDni(12345678);
         miDni.getLetra();
         miDni.getNIF();
         miDni.imprime();
