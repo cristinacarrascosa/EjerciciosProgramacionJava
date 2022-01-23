@@ -36,7 +36,7 @@ public class Punto {
          this.y = y;
      }
      
-     // Métodos
+     // Métodos  D1
      public void imprime(){
          System.out.println("("+x+", "+y+")");
      }
@@ -51,5 +51,10 @@ public class Punto {
      public int distancia(Punto p){
          int distancia = (int)Math.sqrt((p.x - this.x)*(p.x-this.x)+(p.y-this.y)*(p.y-this.y));
          return distancia;
+     }
+     public static String creaPuntoAleatorio(){
+         int x = (int)(1+Math.random())*(100-99);
+         int y = (int)(1+Math.random())*(100-99);
+         return x+":"+y;
      }
 }
