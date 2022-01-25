@@ -1,9 +1,7 @@
-
 package Ud6.POO.Ejercicios3.DNI;
 
-
 public class DNI {
-    
+
     // ATRIBUTOS
     private int dni;
     private static final String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
@@ -12,7 +10,7 @@ public class DNI {
     public DNI(int dni) {
         this.dni = dni;
     }
-    
+
     // GETTERS
     public int getDNI() {
         return this.dni;
@@ -23,7 +21,7 @@ public class DNI {
     }
 
     public String getNIF() {
-        return ( "" + dni + getLetra() );
+        return ("" + dni + getLetra());
     }
 
     // SETTERS
@@ -35,5 +33,11 @@ public class DNI {
     public void imprime() {
         System.out.println(getNIF());
     }
-    
+
+    public static DNI newRandomDni() {
+        int numeroRandom = (int) (Math.random() * (99999999 - 00000000 + 1) + 00000000);
+        DNI DniRandom = new DNI(numeroRandom);
+        return DniRandom;
+    }
+
 }

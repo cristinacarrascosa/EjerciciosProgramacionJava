@@ -1,10 +1,8 @@
-
 package Ud6.POO.Ejercicios3.Reloj;
 
-
 public class Reloj {
-    
-     // ATRIBUTOS
+
+    // ATRIBUTOS
     private int hora;
     private int minutos;
     private int segundos;
@@ -80,7 +78,7 @@ public class Reloj {
     public void imprimeHora12() {
         System.out.println(dimeHora12());
     }
-    
+
     public void tick() {
         segundos++;
         if (segundos == 60) {
@@ -92,16 +90,13 @@ public class Reloj {
             hora = (hora + 1) % 24;
         }
     }
-    public void tick(int s){
-        segundos += s;
-        if (segundos == 60) {
-            segundos = 0;
-            minutos++;
-        }
-        if (minutos == 60) {
-            minutos = 0;
-            hora = (hora + 1) % 24;
+
+    
+
+    public  void tick(int s) {
+        for (int i = 0; i < s; i++) {
+           tick();
         }
     }
-    
+
 }
