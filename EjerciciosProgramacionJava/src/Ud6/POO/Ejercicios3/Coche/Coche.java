@@ -19,7 +19,7 @@ public class Coche {
     private boolean pinturaMetalizada;
     private String matricula;
     private int anyoFabricacion;
-    private tipoCoche tipo;
+    tipoCoche tipo;
     private modalidadSeguro seguro;
 
     // CONSTRUCTOR
