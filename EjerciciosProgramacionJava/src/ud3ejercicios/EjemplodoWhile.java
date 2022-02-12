@@ -18,6 +18,7 @@ public class EjemplodoWhile {
     Scanner in = new Scanner(System.in);
 
     int nota;
+    int total = 0;
 
     
         do {

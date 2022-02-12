@@ -21,10 +21,12 @@ public class Ej14 {
                          mult = true;            
                     }    
             }
-            if (mult 10) 
+            if (mult){ 
                 System.out.println("Alguno era múltiplo");
-             else
+            }
+            else {
                 System.out.println("Ninguno era múltiplo");
+                    }
     }
  }
 
